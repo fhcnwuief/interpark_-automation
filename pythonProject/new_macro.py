@@ -34,11 +34,13 @@ def login(driver):
 
     # id 입력
     id_input = driver.find_element(By.CSS_SELECTOR, '#userId')
-    id_input.send_keys("miju0744")
+    # 괄호 안에 본인의 아이디 
+    id_input.send_keys("*******")
     time.sleep(1)
     # pw 입력
     pw_input = driver.find_element(By.CSS_SELECTOR, '#userPwd')
-    pw_input.send_keys("win8803@#")
+    # 괄호 안에 본인의 비밀번호
+    pw_input.send_keys("******")
     time.sleep(1)
     # button 클릭
     button = driver.find_element(By.CSS_SELECTOR, '#btn_login')
