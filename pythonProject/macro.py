@@ -32,11 +32,13 @@ driver.switch_to.frame(iframes[0])
 
 # css 요소 찾기(1) - id 입력
 id_input = driver.find_element(By.CSS_SELECTOR,'#userId')
-id_input.send_keys("miju0744")
+# 여기에 개인정보 삽입
+id_input.send_keys("******")
 time.sleep(1)
 # css 요소 찾기(2) - pw 입력
 pw_input = driver.find_element(By.CSS_SELECTOR,'#userPwd')
-pw_input.send_keys("win8803@#")
+# 여기에 개인정보 삽입
+pw_input.send_keys("******")
 time.sleep(1)
 # button 클릭
 button = driver.find_element(By.CSS_SELECTOR,'#btn_login')
